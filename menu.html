@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="Zombie Rush: Last Escape - Main Menu">
+  <title>Zombie Rush: Last Escape</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #e5e3e3;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container {
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 32px;
+      font-weight: bold;
+      color: #000;
+      margin-bottom: 40px;
+    }
+
+    .btn {
+      display: block;
+      width: 300px;
+      padding: 20px 0;
+      margin: 20px auto;
+      background-color: #c9c4c4;
+      color: black;
+      font-size: 20px;
+      font-weight: bold;
+      border: none;
+      cursor: pointer;
+    }
+
+    .btn:hover {
+      background-color: #b2aeae;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>ZOMBIE RUSH: LAST ESCAPE</h1>
+    <button class="btn" onclick="startGame()">START GAME</button>
+    <button class="btn" onclick="viewScores()">VIEW SCORES</button>
+    <button class="btn" onclick="exitGame()">EXIT</button>
+  </div>
+
+  <script>
+    function startGame() {
+      window.location.href = "";
+    }
+
+    function viewScores() {
+      window.location.href = "";
+    }
+
+    function exitGame() {
+      if (confirm("Are you sure you want to exit the game?")) {
+        window.open('', '_self', '');
+        window.close();
+      }
+    }
+  </script>
+</body>
+</html>
